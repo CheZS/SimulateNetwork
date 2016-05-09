@@ -84,4 +84,11 @@ public class Link {
 		}
 		return false;
 	}
+	
+	public Node getAnotherNode(Node node) {
+		if (node == null) {
+			return null;
+		}
+		return (node == nodes[0]) ? nodes[1] : nodes[0];
+	}
 }
